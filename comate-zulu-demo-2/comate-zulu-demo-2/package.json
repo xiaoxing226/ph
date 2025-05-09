@@ -1,0 +1,25 @@
+
+{
+  "name": "title-translator",
+  "version": "1.0.0",
+  "description": "多平台标题翻译工具",
+  "scripts": {
+    "build": "echo 'Building static site...'",
+    "test": "echo 'No tests specified'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/title-translator.git"
+  },
+  "keywords": [
+    "translation",
+    "deepseek",
+    "ecommerce"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/title-translator/issues"
+  },
+  "homepage": "https://yourusername.github.io/title-translator"
+}
