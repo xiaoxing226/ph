@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>后台管理 - 标题翻译工具</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>后台管理</h1>
+        
+        <div class="api-section">
+            <h2>DEEPSEEK API 配置</h2>
+            <label for="api-key">API Key:</label>
+            <input type="text" id="api-key" placeholder="输入DEEPSEEK API Key">
+        </div>
+
+        <div class="platform-management">
+            <h2>平台管理</h2>
+            
+            <div class="platform-list">
+                <h3>现有平台</h3>
+                <ul id="platform-list">
+                    <!-- 平台列表将通过JS动态生成 -->
+                </ul>
+            </div>
+
+            <div class="add-platform">
+                <h3>添加/编辑平台</h3>
+                <label for="platform-name">平台名称:</label>
+                <input type="text" id="platform-name" placeholder="例如: TK视频马来">
+                
+                <label for="platform-id">平台ID:</label>
+                <input type="text" id="platform-id" placeholder="例如: tiktok-video-my">
+                
+                <label for="prompt-text">提示词:</label>
+                <textarea id="prompt-text" rows="5" placeholder="输入DEEPSEEK翻译提示词"></textarea>
+                
+                <button id="save-platform-btn">保存平台</button>
+                <button id="delete-platform-btn">删除平台</button>
+            </div>
+        </div>
+
+        <button id="save-settings-btn">保存设置</button>
+        <button id="back-to-home-btn">返回首页</button>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

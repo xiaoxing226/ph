@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>标题翻译工具</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>标题翻译工具</h1>
+        
+        <div class="input-section">
+            <label for="chinese-title">中文标题：</label>
+            <textarea id="chinese-title" rows="3"></textarea>
+        </div>
+
+        <div class="platform-section">
+            <label>选择平台：</label>
+            <select id="platform-select">
+                <option value="tiktok-video-my">TK视频马来</option>
+                <option value="tiktok-shop-my">TK小店马来</option>
+                <option value="shopee-my">SHOPEE马来</option>
+                <option value="amazon-us">AMAZON美国</option>
+            </select>
+        </div>
+
+        <button id="translate-btn">翻译</button>
+
+        <div class="result-section">
+            <label>翻译结果：</label>
+            <textarea id="translated-title" rows="3" readonly></textarea>
+            <button id="copy-btn">复制</button>
+            
+            <label>中文意思：</label>
+            <textarea id="translated-meaning" rows="3" readonly></textarea>
+        </div>
+
+        <button id="settings-btn">设置</button>
+    
+    <!-- 部署按钮 -->
+    <div style="margin-top: 30px; text-align: center;">
+      <a href="https://vercel.com/new/clone?repository-url=https://github.com/yourusername/title-translator" target="_blank">
+        <img src="https://vercel.com/button" alt="Deploy with Vercel"/>
+      </a>
+      <p style="font-size: 12px; color: #666;">点击上方按钮一键部署</p>
+    </div>
+    </div>
+
+    <div id="password-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>请输入密码</h2>
+            <input type="password" id="password-input">
+            <button id="login-btn">登录</button>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
